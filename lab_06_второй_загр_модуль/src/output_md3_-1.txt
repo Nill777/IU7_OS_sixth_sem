@@ -1,0 +1,76 @@
+make -C /lib/modules/6.1.131-1-MANJARO/build M=/home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src modules
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md1.o
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md2.o
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md3.o
+  MODPOST /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/Module.symvers
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md1.mod.o
+  LD [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md1.ko
+  BTF [M] /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md1.ko
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md2.mod.o
+  LD [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md2.ko
+  BTF [M] /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md2.ko
+  CC [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md3.mod.o
+  LD [M]  /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md3.ko
+  BTF [M] /home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src/md3.ko
+>>>>> Loading md1.ko
+
+>>>>> Loading md2.ko
+
+>>>>> Modules 1 and 2 was loaded: 
+md2                    16384  0
+md1                    16384  1 md2
+snd_sof_amd_rembrandt    16384  0
+edac_mce_amd           57344  0
+snd_sof_amd_renoir     16384  0
+snd_sof_amd_acp        53248  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+kvm_amd               176128  0
+snd_sof_pci            24576  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+snd_sof               339968  2 snd_sof_amd_acp,snd_sof_pci
+kvm                  1167360  1 kvm_amd
+crypto_simd            16384  1 aesni_intel
+cryptd                 24576  3 crypto_simd,ghash_clmulni_intel
+snd_pcm               172032  13 snd_sof_amd_acp,snd_hda_codec_hdmi,snd_pci_acp6x,snd_hda_intel,snd_hda_codec,snd_sof,snd_compress,snd_soc_core,snd_sof_utils,snd_hda_core,snd_acp3x_pdm_dma,snd_pci_ps,snd_pcm_dmaengine
+snd_acp_config         16384  5 snd_rn_pci_acp3x,snd_pci_acp5x,snd_sof_amd_rembrandt,snd_acp_pci,snd_sof_amd_renoir
+snd_soc_acpi           16384  2 snd_sof_amd_acp,snd_acp_config
+ccp                   135168  1 kvm_amd
+amdgpu              10567680  32
+drm_ttm_helper         16384  1 amdgpu
+ttm                    98304  2 amdgpu,drm_ttm_helper
+gpu_sched              49152  1 amdgpu
+drm_buddy              20480  1 amdgpu
+drm_display_helper    184320  1 amdgpu
+video                  69632  1 amdgpu
+
+>>>>> Last 15 lines in the system log: 
+[ 1973.352770] + module md1 start!
+[ 1974.199169] + module md2 start!
+[ 1974.199174] + data string exported from md1 : qwertyui
+[ 1974.199175] + string returned md1_proc() is : qwertyui
+
+>>>>> Remove md2
+
+>>>>> Loading md3.ko
+
+>>>>> Last 15 lines in the system log: 
+[ 1973.352770] + module md1 start!
+[ 1974.199169] + module md2 start!
+[ 1974.199174] + data string exported from md1 : qwertyui
+[ 1974.199175] + string returned md1_proc() is : qwertyui
+[ 1975.340395] + module md2 unloaded!
+[ 1976.214261] + module md3 start!
+[ 1976.214266] + data string exported from md1 : qwertyui
+[ 1976.214267] + string returned md1_proc() is : qwertyui
+
+>>>>> Remove md3...
+
+>>>>> Remove md1...
+
+[ 1973.352770] + module md1 start!
+[ 1974.199169] + module md2 start!
+[ 1974.199174] + data string exported from md1 : qwertyui
+[ 1974.199175] + string returned md1_proc() is : qwertyui
+[ 1975.340395] + module md2 unloaded!
+[ 1976.214261] + module md3 start!
+[ 1976.214266] + data string exported from md1 : qwertyui
+[ 1976.214267] + string returned md1_proc() is : qwertyui
+[ 1978.029310] + module md1 unloaded!

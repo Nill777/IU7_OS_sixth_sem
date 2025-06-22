@@ -1,0 +1,129 @@
+policy - (SCHED_IDLE)
+
+[ 4394.650622] + taskp - 18446637866057515264, task - localsearch-ext, pid - 9544, parent - localsearch-3, ppid - 3239
+                 state - 1, on_cpu - 0, flags - 400000
+                 prio - 139, static_prio - 139, normal_prio - 139, rt_priority - 0
+                 policy - 5, exit_state - 0, exit_code - 0, exit_signal - 17
+                 last_switch_count - 25, last_switch_time - 0
+                 utime - 33101391, stime - 16546421
+
+flags - 400000 - 0100 0000 0000 0000 0000 0000
+#define PF_RANDOMIZE		0x00400000	/* bit 22: Randomize virtual address space */
+
+prio - 100 
+policy - 0 (SCHED_NORMAL) CFS
+[ 4394.650532] + taskp - 18446637864735440896, task - kworker/0:0H, pid - 9501, parent - kthreadd, ppid - 2
+                 state - 1026, on_cpu - 0, flags - 4208060
+                 prio - 100, static_prio - 100, normal_prio - 100, rt_priority - 0
+                 policy - 0, exit_state - 0, exit_code - 0, exit_signal - 17
+                 last_switch_count - 96, last_switch_time - 0
+                 utime - 0, stime - 0         
+u - unbounded workqueue (не привязан к конкретному CPU)
+kworker/[CPU]:[ID][H]
+
+state - 1026 - 0100 0000 0010 (TASK_UNINTERRUPTIBLE | TASK_NOLOAD поток ядра был создан kthreadd)
+flags - 4208060 - 0100 0010 0000 1000 0000 0110 0000
+PF_WQ_WORKER        bit 5: I'm a workqueue worker 
+PF_FORKNOEXEC       bit 6: Forked but didn't exec
+PF_NOFREEZE         bit 15: This thread should not be frozen
+PF_KTHREAD          bit 21: I am a kernel thread
+PF_NO_SETAFFINITY   bit 26: Userland is not allowed to meddle with cpus_mask
+Пользовательские процессы не могут изменять маску CPU
+
+policy - 0 (SCHED_NORMAL) CFS
+        
+---
+[ 7163.920000] + taskp - 18446622659282125056, task - kthreadd, pid - 2, parent - swapper/0, ppid - 0
+                 state - 1, on_cpu - 0, flags - 208040
+                 prio - 120, static_prio - 120, normal_prio - 120, rt_priority - 0
+                 policy - 0, exit_state - 0, exit_code - 0, exit_signal - 0
+                 last_switch_count - 428, last_switch_time - 0
+                 utime - 0, stime - 3313867
+
+taskp - 18446622659282125056: указатель на структуру задачи (task_struct) в памяти,
+    который идентифицирует конкретный процесс.
+task - kthreadd: имя задачи. В данном случае это kthreadd, что является потоком ядра,
+    отвечающим за создание других потоков ядра.
+pid - 2: идентификатор процесса (PID). kthreadd обычно имеет PID 2.
+parent - swapper/0: имя родительского процесса. 
+    swapper/0 — это процесс, который управляет переключением контекста между процессами.
+on_cpu - 0: Указывает, находится ли процесс в данный момент на CPU. Значение 0 означает, что процесс не выполняется на процессоре.
+
+policy - 0 (SCHED_NORMAL) CFS
+state - 1 TASK_INTERRUPTIBLE
+flags - 208040 --- 0010 0000 1000 0000 0100 0000
+
+Флаги для kthreadd означают:
+#define PF_FORKNOEXEC		0x00000040	/* bit 6: Forked but didn't exec */ 
+#define PF_NOFREEZE		0x00008000	/* bit 15: This thread should not be frozen */
+#define PF_KTHREAD		0x00200000	/* bit 21: I am a kernel thread */
+
+PF_FORKNOEXEC не допускается выполнение exec, потому что это поток уровня ядра, который выполняет код ядра
+поток не должн быть приостановлен
+
+/*
+ * Per process flags
+ */
+#define PF_VCPU			0x00000001	/* bit 0: I'm a virtual CPU */
+#define PF_IDLE			0x00000002	/* bit 1: I am an IDLE thread */
+#define PF_EXITING		0x00000004	/* bit 2: Getting shut down */
+#define PF_IO_WORKER		0x00000010	/* bit 4: Task is an IO worker */
+#define PF_WQ_WORKER		0x00000020	/* bit 5: I'm a workqueue worker */
+#define PF_FORKNOEXEC		0x00000040	/* bit 6: Forked but didn't exec */
+#define PF_MCE_PROCESS		0x00000080	/* bit 7: Process policy on mce errors */
+#define PF_SUPERPRIV		0x00000100	/* bit 8: Used super-user privileges */
+#define PF_DUMPCORE		0x00000200	/* bit 9: Dumped core */
+#define PF_SIGNALED		0x00000400	/* bit 10: Killed by a signal */
+#define PF_MEMALLOC		0x00000800	/* bit 11: Allocating memory */
+#define PF_NPROC_EXCEEDED	0x00001000	/* bit 12: set_user() noticed that RLIMIT_NPROC was exceeded */
+#define PF_USED_MATH		0x00002000	/* bit 13: If unset the fpu must be initialized before use */
+#define PF_NOFREEZE		0x00008000	/* bit 15: This thread should not be frozen */
+#define PF_FROZEN		0x00010000	/* bit 16: Frozen for system suspend */
+#define PF_KSWAPD		0x00020000	/* bit 17: I am kswapd */
+#define PF_MEMALLOC_NOFS	0x00040000	/* bit 18: All allocation requests will inherit GFP_NOFS */
+#define PF_MEMALLOC_NOIO	0x00080000	/* bit 19: All allocation requests will inherit GFP_NOIO */
+#define PF_LOCAL_THROTTLE	0x00100000	/* bit 20: Throttle writes only against the bdi I write to,
+						 * I am cleaning dirty pages from some other bdi. */
+#define PF_KTHREAD		0x00200000	/* bit 21: I am a kernel thread */
+#define PF_RANDOMIZE		0x00400000	/* bit 22: Randomize virtual address space */
+#define PF_SWAPWRITE		0x00800000	/* bit 23: Allowed to write to swap */
+#define PF_NO_SETAFFINITY	0x04000000	/* bit 26: Userland is not allowed to meddle with cpus_mask */
+#define PF_MCE_EARLY		0x08000000	/* bit 27: Early kill for mce process policy */
+#define PF_MEMALLOC_NOCMA	0x10000000	/* bit 28: All allocation request will have _GFP_MOVABLE cleared */
+#define PF_FREEZER_SKIP		0x40000000	/* bit 30: Freezer should not count it as freezable */
+#define PF_SUSPEND_TASK		0x80000000	/* bit 31: This thread called freeze_processes() and should not be frozen */
+
+/* Used in tsk->state: */
+#define TASK_RUNNING			0x0000
+#define TASK_INTERRUPTIBLE		0x0001
+#define TASK_UNINTERRUPTIBLE		0x0002
+#define __TASK_STOPPED			0x0004
+#define __TASK_TRACED			0x0008
+/* Used in tsk->exit_state: */
+#define EXIT_DEAD			0x0010
+#define EXIT_ZOMBIE			0x0020
+#define EXIT_TRACE			(EXIT_ZOMBIE | EXIT_DEAD)
+/* Used in tsk->state again: */
+#define TASK_PARKED			0x0040
+#define TASK_DEAD			0x0080
+#define TASK_WAKEKILL			0x0100
+#define TASK_WAKING			0x0200
+#define TASK_NOLOAD			0x0400
+#define TASK_NEW			0x0800
+#define TASK_STATE_MAX			0x1000
+
+/* Convenience macros for the sake of set_current_state: */
+#define TASK_KILLABLE			(TASK_WAKEKILL | TASK_UNINTERRUPTIBLE)
+#define TASK_STOPPED			(TASK_WAKEKILL | __TASK_STOPPED)
+#define TASK_TRACED			(TASK_WAKEKILL | __TASK_TRACED)
+
+#define TASK_IDLE			(TASK_UNINTERRUPTIBLE | TASK_NOLOAD)
+
+/* Convenience macros for the sake of wake_up(): */
+#define TASK_NORMAL			(TASK_INTERRUPTIBLE | TASK_UNINTERRUPTIBLE)
+
+/* get_task_state(): */
+#define TASK_REPORT			(TASK_RUNNING | TASK_INTERRUPTIBLE | \
+					 TASK_UNINTERRUPTIBLE | __TASK_STOPPED | \
+					 __TASK_TRACED | EXIT_DEAD | EXIT_ZOMBIE | \
+					 TASK_PARKED)

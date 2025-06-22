@@ -1,0 +1,120 @@
+
+[Process Environment Variables]
+SYSTEMD_EXEC_PID=4400
+[Process Stat]
+
+[Process Stat]
+1. PID: 9963
+2. Command: (client)
+3. State: S
+4. PPID: 5845
+5. PGRP: 9963
+6. Session: 5845
+7. TTY_NR: 34819
+8. Tpgid: 9963
+9. Flags: 4194304
+10. Minflt: 127
+11. Cminflt: 0
+12. Majflt: 0
+13. Cmajflt: 0
+14. Utime: 0
+15. Stime: 0
+16. Cutime: 0
+17. Cstime: 0
+18. Priority: 20
+19. Nice: 0
+20. Num Threads: 1
+21. Starttime: 877934
+22. Vsize: 2613248
+23. Rss: 272
+24. Rsslim: 9223372036854775807
+25. Startcode: 94354016743424 (55d081a6b000)
+26. Endcode: 94354016745005 (55d081a6b62d)
+27. Startstack: 140734353729312
+28. Kstkesp: 0
+29. Kstkeip: 0
+30. Signal: 0
+31. Blocked: 0
+32. Sigignore: 0
+33. Sigcatch: 0
+34. Wchan: 1
+35. Nswap: 0
+36. Cnswap: 0
+37. Exit_signal: 17
+38. Processor: 1
+39. Rt_priority: 0
+40. Policy: 0
+41. Delayacct_blkio_ticks: 0
+42. Guest_time: 0
+43. Cguest_time: 0
+44. Start_data: 94354016755152
+45. End_data: 94354016755848
+46. Start_brk: 94354596605952
+47. Arg_start: 140734353731554
+48. Arg_end: 140734353731573
+49. Env_start: 140734353731573
+50. Env_end: 140734353735663
+51. Exit_code: 0
+
+[Command Line Arguments]
+./client
+[File Descriptors]:
+.
+..
+0
+1
+2
+3
+
+[Current Working Directory]: /home/andrey/SEM_06/OS/lab4/labs/threads
+
+[Executable Path]: /home/andrey/SEM_06/OS/lab4/labs/threads/client
+
+[Root Directory]: /
+
+[I/O Statistics]
+rchar: 4204
+wchar: 680
+syscr: 8
+syscw: 38
+read_bytes: 0
+write_bytes: 0
+cancelled_write_bytes: 0
+
+[Process Name]
+client
+
+[Task Subdirectory]:
+.
+..
+9963
+
+[Memory Map]
+    1  55d081a6a000-55d081a6b000 r--p 00000000 08:01 44520576                   /home/andrey/SEM_06/OS/lab4/labs/threads/client
+    1  55d081a6b000-55d081a6c000 r-xp 00001000 08:01 44520576                   /home/andrey/SEM_06/OS/lab4/labs/threads/client
+    1  55d081a6c000-55d081a6d000 r--p 00002000 08:01 44520576                   /home/andrey/SEM_06/OS/lab4/labs/threads/client
+    1  55d081a6d000-55d081a6e000 r--p 00002000 08:01 44520576                   /home/andrey/SEM_06/OS/lab4/labs/threads/client
+    1  55d081a6e000-55d081a6f000 rw-p 00003000 08:01 44520576                   /home/andrey/SEM_06/OS/lab4/labs/threads/client
+   33  55d0a436b000-55d0a438c000 rw-p 00000000 00:00 0                          [heap]
+    3  7f225bd5f000-7f225bd62000 rw-p 00000000 00:00 0 
+   36  7f225bd62000-7f225bd86000 r--p 00000000 08:01 18666759                   /usr/lib/libc.so.6
+  369  7f225bd86000-7f225bef7000 r-xp 00024000 08:01 18666759                   /usr/lib/libc.so.6
+   79  7f225bef7000-7f225bf46000 r--p 00195000 08:01 18666759                   /usr/lib/libc.so.6
+    4  7f225bf46000-7f225bf4a000 r--p 001e3000 08:01 18666759                   /usr/lib/libc.so.6
+    2  7f225bf4a000-7f225bf4c000 rw-p 001e7000 08:01 18666759                   /usr/lib/libc.so.6
+    8  7f225bf4c000-7f225bf54000 rw-p 00000000 00:00 0 
+    2  7f225bf8a000-7f225bf8c000 rw-p 00000000 00:00 0 
+    1  7f225bf8c000-7f225bf8d000 r--p 00000000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   41  7f225bf8d000-7f225bfb6000 r-xp 00001000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   11  7f225bfb6000-7f225bfc1000 r--p 0002a000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    2  7f225bfc1000-7f225bfc3000 r--p 00034000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7f225bfc3000-7f225bfc4000 rw-p 00036000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7f225bfc4000-7f225bfc5000 rw-p 00000000 00:00 0 
+   34  7fff45276000-7fff45298000 rw-p 00000000 00:00 0                          [stack]
+    4  7fff452af000-7fff452b3000 r--p 00000000 00:00 0                          [vvar]
+    2  7fff452b3000-7fff452b5000 r-xp 00000000 00:00 0                          [vdso]
+    1  ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+Total pages: 639
+Total vsize: 2617344
+
+[Process Memory Pages]

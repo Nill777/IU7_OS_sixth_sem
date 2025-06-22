@@ -1,0 +1,76 @@
+10260:   ./calculator_server
+Address           Kbytes     RSS   Dirty Mode  Mapping
+000056004c37c000       4       4       0 r---- calculator_server
+000056004c37d000       4       4       0 r-x-- calculator_server
+000056004c37e000       4       4       0 r---- calculator_server
+000056004c37f000       4       4       4 r---- calculator_server
+000056004c380000       4       4       4 rw--- calculator_server
+000056004c381000       4       4       4 rw---   [ anon ]
+0000560061fd6000     132      52      52 rw---   [ anon ]
+00007ff4cea9d000      20      16      16 rw---   [ anon ]
+00007ff4ceaa2000      12      12       0 r---- libresolv.so.2
+00007ff4ceaa5000      36      32       0 r-x-- libresolv.so.2
+00007ff4ceaae000       8       0       0 r---- libresolv.so.2
+00007ff4ceab0000       4       4       4 r---- libresolv.so.2
+00007ff4ceab1000       4       4       4 rw--- libresolv.so.2
+00007ff4ceab2000       8       0       0 rw---   [ anon ]
+00007ff4ceab4000       8       8       0 r---- libkeyutils.so.1.10
+00007ff4ceab6000       8       8       0 r-x-- libkeyutils.so.1.10
+00007ff4ceab8000       4       0       0 r---- libkeyutils.so.1.10
+00007ff4ceab9000       4       4       4 r---- libkeyutils.so.1.10
+00007ff4ceaba000       4       4       4 rw--- libkeyutils.so.1.10
+00007ff4ceabb000      12      12       0 r---- libkrb5support.so.0.1
+00007ff4ceabe000      28      24       0 r-x-- libkrb5support.so.0.1
+00007ff4ceac5000       8       0       0 r---- libkrb5support.so.0.1
+00007ff4ceac7000       4       4       4 r---- libkrb5support.so.0.1
+00007ff4ceac8000       4       4       4 rw--- libkrb5support.so.0.1
+00007ff4ceac9000       8       8       0 r---- libcom_err.so.2.1
+00007ff4ceacb000       4       4       0 r-x-- libcom_err.so.2.1
+00007ff4ceacc000       4       0       0 r---- libcom_err.so.2.1
+00007ff4ceacd000       4       4       4 r---- libcom_err.so.2.1
+00007ff4ceace000       4       4       4 rw--- libcom_err.so.2.1
+00007ff4ceacf000      12      12       0 r---- libk5crypto.so.3.1
+00007ff4cead2000     112      60       0 r-x-- libk5crypto.so.3.1
+00007ff4ceaee000      44       0       0 r---- libk5crypto.so.3.1
+00007ff4ceaf9000       8       8       8 r---- libk5crypto.so.3.1
+00007ff4ceafb000       4       4       4 rw--- libk5crypto.so.3.1
+00007ff4ceafc000       8       8       8 rw---   [ anon ]
+00007ff4ceafe000      68      68       0 r---- libkrb5.so.3.3
+00007ff4ceb0f000     424      60       0 r-x-- libkrb5.so.3.3
+00007ff4ceb79000     232       0       0 r---- libkrb5.so.3.3
+00007ff4cebb3000      56      56      56 r---- libkrb5.so.3.3
+00007ff4cebc1000       8       8       8 rw--- libkrb5.so.3.3
+00007ff4cebc3000      36      36       0 r---- libgssapi_krb5.so.2.2
+00007ff4cebcc000     244      60       0 r-x-- libgssapi_krb5.so.2.2
+00007ff4cec09000      40       0       0 r---- libgssapi_krb5.so.2.2
+00007ff4cec13000       8       8       8 r---- libgssapi_krb5.so.2.2
+00007ff4cec15000       4       4       4 rw--- libgssapi_krb5.so.2.2
+00007ff4cec16000     144     144       0 r---- libc.so.6
+00007ff4cec3a000    1476    1212       0 r-x-- libc.so.6
+00007ff4cedab000     316     144       0 r---- libc.so.6
+00007ff4cedfa000      16      16      16 r---- libc.so.6
+00007ff4cedfe000       8       8       8 rw--- libc.so.6
+00007ff4cee00000      32      20      20 rw---   [ anon ]
+00007ff4cee08000      32      32       0 r---- libtirpc.so.3.0.0
+00007ff4cee10000     108     108       0 r-x-- libtirpc.so.3.0.0
+00007ff4cee2b000      32      32       0 r---- libtirpc.so.3.0.0
+00007ff4cee33000       8       8       8 r---- libtirpc.so.3.0.0
+00007ff4cee35000       4       4       4 rw--- libtirpc.so.3.0.0
+00007ff4cee36000       8       8       0 r---- libnsl.so.3.0.0
+00007ff4cee38000      12      12       0 r-x-- libnsl.so.3.0.0
+00007ff4cee3b000       4       0       0 r---- libnsl.so.3.0.0
+00007ff4cee3c000       4       4       4 r---- libnsl.so.3.0.0
+00007ff4cee3d000       4       4       4 rw--- libnsl.so.3.0.0
+00007ff4cee74000       8       8       8 rw---   [ anon ]
+00007ff4cee76000       4       4       0 r---- ld-linux-x86-64.so.2
+00007ff4cee77000     164     164       0 r-x-- ld-linux-x86-64.so.2
+00007ff4ceea0000      44      44       0 r---- ld-linux-x86-64.so.2
+00007ff4ceeab000       8       8       8 r---- ld-linux-x86-64.so.2
+00007ff4ceead000       4       4       4 rw--- ld-linux-x86-64.so.2
+00007ff4ceeae000       4       4       4 rw---   [ anon ]
+00007ffe38447000     136      16      16 rw---   [ stack ]
+00007ffe38501000      16       0       0 r----   [ anon ]
+00007ffe38505000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+total kB            4272    2636     312

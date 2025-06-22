@@ -1,0 +1,91 @@
+make -C /lib/modules/6.1.131-1-MANJARO/build M=/home/andrey/SEM_06/OS/lab_06_второй_загр_модуль/src modules
+>>>>> Loading md1.ko
+
+>>>>> Loading md2.ko
+
+>>>>> Modules 1 and 2 was loaded: 
+md2                    16384  0
+md1                    16384  1 md2
+snd_sof_amd_rembrandt    16384  0
+snd_sof_amd_renoir     16384  0
+snd_sof_amd_acp        53248  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+edac_mce_amd           57344  0
+snd_sof_pci            24576  2 snd_sof_amd_rembrandt,snd_sof_amd_renoir
+snd_sof               339968  2 snd_sof_amd_acp,snd_sof_pci
+kvm_amd               176128  0
+kvm                  1167360  1 kvm_amd
+crypto_simd            16384  1 aesni_intel
+snd_pcm               172032  13 snd_sof_amd_acp,snd_hda_codec_hdmi,snd_pci_acp6x,snd_hda_intel,snd_hda_codec,snd_sof,snd_compress,snd_soc_core,snd_sof_utils,snd_hda_core,snd_acp3x_pdm_dma,snd_pci_ps,snd_pcm_dmaengine
+cryptd                 24576  3 crypto_simd,ghash_clmulni_intel
+snd_acp_config         16384  5 snd_rn_pci_acp3x,snd_pci_acp5x,snd_sof_amd_rembrandt,snd_acp_pci,snd_sof_amd_renoir
+snd_soc_acpi           16384  2 snd_sof_amd_acp,snd_acp_config
+ccp                   135168  1 kvm_amd
+amdgpu              10567680  29
+drm_ttm_helper         16384  1 amdgpu
+ttm                    98304  2 amdgpu,drm_ttm_helper
+gpu_sched              49152  1 amdgpu
+drm_buddy              20480  1 amdgpu
+drm_display_helper    184320  1 amdgpu
+video                  69632  1 amdgpu
+
+>>>>> Last 15 lines in the system log: 
+[  913.646063] + module md1 start!
+[  914.521136] + module md2 start!
+[  914.521143] + data string exported from md1 : qwertyui
+[  914.521147] + string returned md1_proc() is : qwertyui
+[  915.683375] + module md2 unloaded!
+[  916.595242] + module md3 start!
+[  916.595249] + data string exported from md1 : qwertyui
+[  916.595252] + string returned md1_proc() is : qwertyui
+[  918.477207] + module md1 unloaded!
+[  983.333159] + module md1 start!
+[  984.185470] + module md2 start!
+[  984.185478] + data string exported from md1 : qwertyui
+[  984.185481] + string returned md1_proc() is : qwertyui
+
+>>>>> Remove md2
+
+>>>>> Loading md3.ko
+
+>>>>> Last 15 lines in the system log: 
+[  913.646063] + module md1 start!
+[  914.521136] + module md2 start!
+[  914.521143] + data string exported from md1 : qwertyui
+[  914.521147] + string returned md1_proc() is : qwertyui
+[  915.683375] + module md2 unloaded!
+[  916.595242] + module md3 start!
+[  916.595249] + data string exported from md1 : qwertyui
+[  916.595252] + string returned md1_proc() is : qwertyui
+[  918.477207] + module md1 unloaded!
+[  983.333159] + module md1 start!
+[  984.185470] + module md2 start!
+[  984.185478] + data string exported from md1 : qwertyui
+[  984.185481] + string returned md1_proc() is : qwertyui
+[  985.358846] + module md2 unloaded!
+[  986.255522] + module md3 start!
+[  986.255527] + data string exported from md1 : qwertyui
+[  986.255528] + string returned md1_proc() is : qwertyui
+
+>>>>> Remove md3...
+
+>>>>> Remove md1...
+
+[  913.646063] + module md1 start!
+[  914.521136] + module md2 start!
+[  914.521143] + data string exported from md1 : qwertyui
+[  914.521147] + string returned md1_proc() is : qwertyui
+[  915.683375] + module md2 unloaded!
+[  916.595242] + module md3 start!
+[  916.595249] + data string exported from md1 : qwertyui
+[  916.595252] + string returned md1_proc() is : qwertyui
+[  918.477207] + module md1 unloaded!
+[  983.333159] + module md1 start!
+[  984.185470] + module md2 start!
+[  984.185478] + data string exported from md1 : qwertyui
+[  984.185481] + string returned md1_proc() is : qwertyui
+[  985.358846] + module md2 unloaded!
+[  986.255522] + module md3 start!
+[  986.255527] + data string exported from md1 : qwertyui
+[  986.255528] + string returned md1_proc() is : qwertyui
+[  987.202998] + module md3 unloaded!
+[  988.109700] + module md1 unloaded!

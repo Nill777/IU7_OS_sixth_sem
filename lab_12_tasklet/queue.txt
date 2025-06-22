@@ -1,0 +1,70 @@
+[   77.724057] + Key: S Code: 159 Execution time: 23417
+[   77.724063] + work1 end
+[   77.724066] + work2 begin
+[   77.739187] + Key: S Code: 159
+[   77.739200] + work2 end
+[   77.843788] + work1 begin
+[   77.843796] + Key: U Code: 150 Execution time: 34398
+[   77.843803] + work1 end
+[   77.843805] + work2 begin
+[   77.859601] + Key: U Code: 150
+[   77.859612] + work2 end
+[   78.092817] + work1 begin
+[   78.092823] + Key: D Code: 160 Execution time: 22906
+[   78.092830] + work1 end
+[   78.092833] + work2 begin
+[   78.108792] + Key: D Code: 160
+[   78.108810] + work2 end
+[   78.422038] + work1 begin
+[   78.422045] + Key: O Code: 152 Execution time: 37385
+[   78.422052] + work1 end
+[   78.422054] + work2 begin
+[   78.438789] + Key: O Code: 152
+[   78.438801] + work2 end
+[   78.805384] + work1 begin
+[   78.805389] + Key: Space Code: 185 Execution time: 20398
+[   78.805394] + work1 end
+[   78.805395] + work2 begin
+[   78.821681] + Key: Space Code: 185
+[   78.821695] + work2 end
+[   79.945981] + work1 begin
+[   79.945988] + Key: D Code: 160 Execution time: 25881
+[   79.945995] + work1 end
+[   79.945997] + work2 begin
+[   79.960683] + Key: D Code: 160
+[   79.960694] + work2 end
+[   80.437955] + work1 begin
+[   80.437962] + Key: M Code: 178 Execution time: 33190
+[   80.437969] + work1 end
+[   80.437972] + work2 begin
+[   80.453350] + Key: M Code: 178
+[   80.453361] + work2 end
+[   80.597556] + work1 begin
+[   80.597563] + Key: E Code: 146 Execution time: 39277
+[   80.597569] + work1 end
+[   80.597572] + work2 begin
+[   80.613514] + Key: E Code: 146
+[   80.613526] + work2 end
+[   80.948717] + work1 begin
+[   80.948724] + Key: S Code: 159 Execution time: 39357
+[   80.948730] + work1 end
+[   80.948733] + work2 begin
+[   80.962893] + Key: S Code: 159
+[   80.962920] + work2 end
+[   81.225078] + work1 begin
+[   81.225083] + Key: G Code: 162 Execution time: 24064
+[   81.225087] + work1 end
+[   81.225088] + work2 begin
+[   81.239326] + Key: G Code: 162
+[   81.239334] + work2 end
+
+[   48.241626] + Key: S Code: 159 Execution time: 6402
+[   48.381289] + Key: U Code: 150 Execution time: 6683
+[   49.320338] + Key: D Code: 160 Execution time: 19136
+[   49.475615] + Key: O Code: 152 Execution time: 5891
+[   49.701760] + Key: Space Code: 185 Execution time: 7884
+[   50.394355] + Key: D Code: 160 Execution time: 8105
+[   50.777448] + Key: M Code: 178 Execution time: 8586
+[   50.930137] + Key: E Code: 146 Execution time: 9477
+[   51.418641] + Key: S Code: 159 Execution time: 8696
+[   51.538178] + Key: G Code: 162 Execution time: 6151

@@ -1,0 +1,169 @@
+
+[Process Environment Variables]
+SYSTEMD_EXEC_PID=4400
+[Process Stat]
+
+[Process Stat]
+1. PID: 10260
+2. Command: (calculator_serv)
+3. State: S
+4. PPID: 5770
+5. PGRP: 10260
+6. Session: 5770
+7. TTY_NR: 34818
+8. Tpgid: 10260
+9. Flags: 4194304
+10. Minflt: 212
+11. Cminflt: 0
+12. Majflt: 0
+13. Cmajflt: 0
+14. Utime: 0
+15. Stime: 1
+16. Cutime: 0
+17. Cstime: 0
+18. Priority: 20
+19. Nice: 0
+20. Num Threads: 1
+21. Starttime: 903021
+22. Vsize: 4370432
+23. Rss: 346
+24. Rsslim: 9223372036854775807
+25. Startcode: 94559278714880 (56004c37d000)
+26. Endcode: 94559278717289 (56004c37d969)
+27. Startstack: 140729842561376
+28. Kstkesp: 0
+29. Kstkeip: 0
+30. Signal: 0
+31. Blocked: 0
+32. Sigignore: 0
+33. Sigcatch: 0
+34. Wchan: 1
+35. Nswap: 0
+36. Cnswap: 0
+37. Exit_signal: 17
+38. Processor: 2
+39. Rt_priority: 0
+40. Policy: 0
+41. Delayacct_blkio_ticks: 0
+42. Guest_time: 0
+43. Cguest_time: 0
+44. Start_data: 94559278726552
+45. End_data: 94559278727296
+46. Start_brk: 94559643983872
+47. Arg_start: 140729842565073
+48. Arg_end: 140729842565093
+49. Env_start: 140729842565093
+50. Env_end: 140729842569188
+51. Exit_code: 0
+
+[Command Line Arguments]
+./calculator_server
+[File Descriptors]:
+.
+..
+0
+1
+2
+3
+4
+
+[Current Working Directory]: /home/andrey/SEM_06/OS/lab4/labs/calc_rpc
+
+[Executable Path]: /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+
+[Root Directory]: /
+
+[I/O Statistics]
+rchar: 17191
+wchar: 328
+syscr: 33
+syscw: 5
+read_bytes: 0
+write_bytes: 0
+cancelled_write_bytes: 0
+
+[Process Name]
+calculator_serv
+
+[Task Subdirectory]:
+.
+..
+10260
+
+[Memory Map]
+    1  56004c37c000-56004c37d000 r--p 00000000 08:01 44520597                   /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+    1  56004c37d000-56004c37e000 r-xp 00001000 08:01 44520597                   /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+    1  56004c37e000-56004c37f000 r--p 00002000 08:01 44520597                   /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+    1  56004c37f000-56004c380000 r--p 00002000 08:01 44520597                   /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+    1  56004c380000-56004c381000 rw-p 00003000 08:01 44520597                   /home/andrey/SEM_06/OS/lab4/labs/calc_rpc/calculator_server
+    1  56004c381000-56004c382000 rw-p 00000000 00:00 0 
+   33  560061fd6000-560061ff7000 rw-p 00000000 00:00 0                          [heap]
+    5  7ff4cea9d000-7ff4ceaa2000 rw-p 00000000 00:00 0 
+    3  7ff4ceaa2000-7ff4ceaa5000 r--p 00000000 08:01 18667670                   /usr/lib/libresolv.so.2
+    9  7ff4ceaa5000-7ff4ceaae000 r-xp 00003000 08:01 18667670                   /usr/lib/libresolv.so.2
+    2  7ff4ceaae000-7ff4ceab0000 r--p 0000c000 08:01 18667670                   /usr/lib/libresolv.so.2
+    1  7ff4ceab0000-7ff4ceab1000 r--p 0000e000 08:01 18667670                   /usr/lib/libresolv.so.2
+    1  7ff4ceab1000-7ff4ceab2000 rw-p 0000f000 08:01 18667670                   /usr/lib/libresolv.so.2
+    2  7ff4ceab2000-7ff4ceab4000 rw-p 00000000 00:00 0 
+    2  7ff4ceab4000-7ff4ceab6000 r--p 00000000 08:01 18685028                   /usr/lib/libkeyutils.so.1.10
+    2  7ff4ceab6000-7ff4ceab8000 r-xp 00002000 08:01 18685028                   /usr/lib/libkeyutils.so.1.10
+    1  7ff4ceab8000-7ff4ceab9000 r--p 00004000 08:01 18685028                   /usr/lib/libkeyutils.so.1.10
+    1  7ff4ceab9000-7ff4ceaba000 r--p 00004000 08:01 18685028                   /usr/lib/libkeyutils.so.1.10
+    1  7ff4ceaba000-7ff4ceabb000 rw-p 00005000 08:01 18685028                   /usr/lib/libkeyutils.so.1.10
+    3  7ff4ceabb000-7ff4ceabe000 r--p 00000000 08:01 18684888                   /usr/lib/libkrb5support.so.0.1
+    7  7ff4ceabe000-7ff4ceac5000 r-xp 00003000 08:01 18684888                   /usr/lib/libkrb5support.so.0.1
+    2  7ff4ceac5000-7ff4ceac7000 r--p 0000a000 08:01 18684888                   /usr/lib/libkrb5support.so.0.1
+    1  7ff4ceac7000-7ff4ceac8000 r--p 0000c000 08:01 18684888                   /usr/lib/libkrb5support.so.0.1
+    1  7ff4ceac8000-7ff4ceac9000 rw-p 0000d000 08:01 18684888                   /usr/lib/libkrb5support.so.0.1
+    2  7ff4ceac9000-7ff4ceacb000 r--p 00000000 08:01 18681923                   /usr/lib/libcom_err.so.2.1
+    1  7ff4ceacb000-7ff4ceacc000 r-xp 00002000 08:01 18681923                   /usr/lib/libcom_err.so.2.1
+    1  7ff4ceacc000-7ff4ceacd000 r--p 00003000 08:01 18681923                   /usr/lib/libcom_err.so.2.1
+    1  7ff4ceacd000-7ff4ceace000 r--p 00003000 08:01 18681923                   /usr/lib/libcom_err.so.2.1
+    1  7ff4ceace000-7ff4ceacf000 rw-p 00004000 08:01 18681923                   /usr/lib/libcom_err.so.2.1
+    3  7ff4ceacf000-7ff4cead2000 r--p 00000000 08:01 18676637                   /usr/lib/libk5crypto.so.3.1
+   28  7ff4cead2000-7ff4ceaee000 r-xp 00003000 08:01 18676637                   /usr/lib/libk5crypto.so.3.1
+   11  7ff4ceaee000-7ff4ceaf9000 r--p 0001f000 08:01 18676637                   /usr/lib/libk5crypto.so.3.1
+    2  7ff4ceaf9000-7ff4ceafb000 r--p 00029000 08:01 18676637                   /usr/lib/libk5crypto.so.3.1
+    1  7ff4ceafb000-7ff4ceafc000 rw-p 0002b000 08:01 18676637                   /usr/lib/libk5crypto.so.3.1
+    2  7ff4ceafc000-7ff4ceafe000 rw-p 00000000 00:00 0 
+   17  7ff4ceafe000-7ff4ceb0f000 r--p 00000000 08:01 18684885                   /usr/lib/libkrb5.so.3.3
+  106  7ff4ceb0f000-7ff4ceb79000 r-xp 00011000 08:01 18684885                   /usr/lib/libkrb5.so.3.3
+   58  7ff4ceb79000-7ff4cebb3000 r--p 0007b000 08:01 18684885                   /usr/lib/libkrb5.so.3.3
+   14  7ff4cebb3000-7ff4cebc1000 r--p 000b5000 08:01 18684885                   /usr/lib/libkrb5.so.3.3
+    2  7ff4cebc1000-7ff4cebc3000 rw-p 000c3000 08:01 18684885                   /usr/lib/libkrb5.so.3.3
+    9  7ff4cebc3000-7ff4cebcc000 r--p 00000000 08:01 18676627                   /usr/lib/libgssapi_krb5.so.2.2
+   61  7ff4cebcc000-7ff4cec09000 r-xp 00009000 08:01 18676627                   /usr/lib/libgssapi_krb5.so.2.2
+   10  7ff4cec09000-7ff4cec13000 r--p 00046000 08:01 18676627                   /usr/lib/libgssapi_krb5.so.2.2
+    2  7ff4cec13000-7ff4cec15000 r--p 00050000 08:01 18676627                   /usr/lib/libgssapi_krb5.so.2.2
+    1  7ff4cec15000-7ff4cec16000 rw-p 00052000 08:01 18676627                   /usr/lib/libgssapi_krb5.so.2.2
+   36  7ff4cec16000-7ff4cec3a000 r--p 00000000 08:01 18666759                   /usr/lib/libc.so.6
+  369  7ff4cec3a000-7ff4cedab000 r-xp 00024000 08:01 18666759                   /usr/lib/libc.so.6
+   79  7ff4cedab000-7ff4cedfa000 r--p 00195000 08:01 18666759                   /usr/lib/libc.so.6
+    4  7ff4cedfa000-7ff4cedfe000 r--p 001e3000 08:01 18666759                   /usr/lib/libc.so.6
+    2  7ff4cedfe000-7ff4cee00000 rw-p 001e7000 08:01 18666759                   /usr/lib/libc.so.6
+    8  7ff4cee00000-7ff4cee08000 rw-p 00000000 00:00 0 
+    8  7ff4cee08000-7ff4cee10000 r--p 00000000 08:01 18682520                   /usr/lib/libtirpc.so.3.0.0
+   27  7ff4cee10000-7ff4cee2b000 r-xp 00008000 08:01 18682520                   /usr/lib/libtirpc.so.3.0.0
+    8  7ff4cee2b000-7ff4cee33000 r--p 00023000 08:01 18682520                   /usr/lib/libtirpc.so.3.0.0
+    2  7ff4cee33000-7ff4cee35000 r--p 0002a000 08:01 18682520                   /usr/lib/libtirpc.so.3.0.0
+    1  7ff4cee35000-7ff4cee36000 rw-p 0002c000 08:01 18682520                   /usr/lib/libtirpc.so.3.0.0
+    2  7ff4cee36000-7ff4cee38000 r--p 00000000 08:01 18683841                   /usr/lib/libnsl.so.3.0.0
+    3  7ff4cee38000-7ff4cee3b000 r-xp 00002000 08:01 18683841                   /usr/lib/libnsl.so.3.0.0
+    1  7ff4cee3b000-7ff4cee3c000 r--p 00005000 08:01 18683841                   /usr/lib/libnsl.so.3.0.0
+    1  7ff4cee3c000-7ff4cee3d000 r--p 00006000 08:01 18683841                   /usr/lib/libnsl.so.3.0.0
+    1  7ff4cee3d000-7ff4cee3e000 rw-p 00007000 08:01 18683841                   /usr/lib/libnsl.so.3.0.0
+    2  7ff4cee74000-7ff4cee76000 rw-p 00000000 00:00 0 
+    1  7ff4cee76000-7ff4cee77000 r--p 00000000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   41  7ff4cee77000-7ff4ceea0000 r-xp 00001000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   11  7ff4ceea0000-7ff4ceeab000 r--p 0002a000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    2  7ff4ceeab000-7ff4ceead000 r--p 00034000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7ff4ceead000-7ff4ceeae000 rw-p 00036000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7ff4ceeae000-7ff4ceeaf000 rw-p 00000000 00:00 0 
+   34  7ffe38447000-7ffe38469000 rw-p 00000000 00:00 0                          [stack]
+    4  7ffe38501000-7ffe38505000 r--p 00000000 00:00 0                          [vvar]
+    2  7ffe38505000-7ffe38507000 r-xp 00000000 00:00 0                          [vdso]
+    1  ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+Total pages: 1068
+Total vsize: 4374528
+
+[Process Memory Pages]

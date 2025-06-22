@@ -1,0 +1,130 @@
+
+[Process Environment Variables]
+SYSTEMD_EXEC_PID=4400
+
+[Process Stat]
+1. PID: 8686
+2. Command: (server)
+3. State: S
+4. PPID: 5770
+5. PGRP: 8686
+6. Session: 5770
+7. TTY_NR: 34818
+8. Tpgid: 8686
+9. Flags: 4194304
+10. Minflt: 131
+11. Cminflt: 0
+12. Majflt: 0
+13. Cmajflt: 0
+14. Utime: 0
+15. Stime: 0
+16. Cutime: 0
+17. Cstime: 0
+18. Priority: 20
+19. Nice: 0
+20. Num Threads: 2
+21. Starttime: 363533
+22. Vsize: 19398656
+23. Rss: 323
+24. Rsslim: 9223372036854775807
+25. Startcode: 94643690868736 (5613f3931000)
+26. Endcode: 94643690871249 (5613f39319d1)
+27. Startstack: 140734663773344
+28. Kstkesp: 0
+29. Kstkeip: 0
+30. Signal: 0
+31. Blocked: 0
+32. Sigignore: 0
+33. Sigcatch: 2
+34. Wchan: 0
+35. Nswap: 0
+36. Cnswap: 0
+37. Exit_signal: 17
+38. Processor: 8
+39. Rt_priority: 0
+40. Policy: 0
+41. Delayacct_blkio_ticks: 0
+42. Guest_time: 0
+43. Cguest_time: 0
+44. Start_data: 94643690880464
+45. End_data: 94643690881308
+46. Start_brk: 94643874729984
+47. Arg_start: 140734663778284
+48. Arg_end: 140734663778293
+49. Env_start: 140734663778293
+50. Env_end: 140734663782383
+51. Exit_code: 0
+
+[Command Line Arguments]
+./server
+[File Descriptors]:
+.
+..
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+[Current Working Directory]: /home/andrey/SEM_06/OS/lab4/labs/threads
+
+[Executable Path]: /home/andrey/SEM_06/OS/lab4/labs/threads/server
+
+[Root Directory]: /
+
+[I/O Statistics]
+rchar: 4204
+wchar: 642
+syscr: 8
+syscw: 22
+read_bytes: 0
+write_bytes: 0
+cancelled_write_bytes: 0
+
+[Process Name]
+server
+
+[Task Subdirectory]:
+.
+..
+8686
+8733
+
+[Memory Map]
+    1  5613f3930000-5613f3931000 r--p 00000000 08:01 44520581                   /home/andrey/SEM_06/OS/lab4/labs/threads/server
+    1  5613f3931000-5613f3932000 r-xp 00001000 08:01 44520581                   /home/andrey/SEM_06/OS/lab4/labs/threads/server
+    1  5613f3932000-5613f3933000 r--p 00002000 08:01 44520581                   /home/andrey/SEM_06/OS/lab4/labs/threads/server
+    1  5613f3933000-5613f3934000 r--p 00002000 08:01 44520581                   /home/andrey/SEM_06/OS/lab4/labs/threads/server
+    1  5613f3934000-5613f3935000 rw-p 00003000 08:01 44520581                   /home/andrey/SEM_06/OS/lab4/labs/threads/server
+   33  5613fe889000-5613fe8aa000 rw-p 00000000 00:00 0                          [heap]
+    1  7f7f8c092000-7f7f8c093000 ---p 00000000 00:00 0 
+ 2048  7f7f8c093000-7f7f8c893000 rw-p 00000000 00:00 0 
+    1  7f7f8c893000-7f7f8c894000 ---p 00000000 00:00 0 
+ 2051  7f7f8c894000-7f7f8d097000 rw-p 00000000 00:00 0 
+   36  7f7f8d097000-7f7f8d0bb000 r--p 00000000 08:01 18666759                   /usr/lib/libc.so.6
+  369  7f7f8d0bb000-7f7f8d22c000 r-xp 00024000 08:01 18666759                   /usr/lib/libc.so.6
+   79  7f7f8d22c000-7f7f8d27b000 r--p 00195000 08:01 18666759                   /usr/lib/libc.so.6
+    4  7f7f8d27b000-7f7f8d27f000 r--p 001e3000 08:01 18666759                   /usr/lib/libc.so.6
+    2  7f7f8d27f000-7f7f8d281000 rw-p 001e7000 08:01 18666759                   /usr/lib/libc.so.6
+    8  7f7f8d281000-7f7f8d289000 rw-p 00000000 00:00 0 
+    2  7f7f8d2bf000-7f7f8d2c1000 rw-p 00000000 00:00 0 
+    1  7f7f8d2c1000-7f7f8d2c2000 r--p 00000000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   41  7f7f8d2c2000-7f7f8d2eb000 r-xp 00001000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+   11  7f7f8d2eb000-7f7f8d2f6000 r--p 0002a000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    2  7f7f8d2f6000-7f7f8d2f8000 r--p 00034000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7f7f8d2f8000-7f7f8d2f9000 rw-p 00036000 08:01 18659098                   /usr/lib/ld-linux-x86-64.so.2
+    1  7f7f8d2f9000-7f7f8d2fa000 rw-p 00000000 00:00 0 
+   34  7fff57a25000-7fff57a47000 rw-p 00000000 00:00 0                          [stack]
+    4  7fff57aa4000-7fff57aa8000 r--p 00000000 00:00 0                          [vvar]
+    2  7fff57aa8000-7fff57aaa000 r-xp 00000000 00:00 0                          [vdso]
+    1  ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+Total pages: 4737
+Total vsize: 19402752
+
+[Process Memory Pages]

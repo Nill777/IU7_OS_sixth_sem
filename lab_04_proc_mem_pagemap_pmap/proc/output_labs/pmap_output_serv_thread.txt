@@ -1,0 +1,31 @@
+8686:   ./server
+Address           Kbytes     RSS   Dirty Mode  Mapping
+00005613f3930000       4       4       0 r---- server
+00005613f3931000       4       4       0 r-x-- server
+00005613f3932000       4       4       0 r---- server
+00005613f3933000       4       4       4 r---- server
+00005613f3934000       4       4       4 rw--- server
+00005613fe889000     132       4       4 rw---   [ anon ]
+00007f7f8c092000       4       0       0 -----   [ anon ]
+00007f7f8c093000    8192       8       8 rw---   [ anon ]
+00007f7f8c893000       4       0       0 -----   [ anon ]
+00007f7f8c894000    8204      16      16 rw---   [ anon ]
+00007f7f8d097000     144     144       0 r---- libc.so.6
+00007f7f8d0bb000    1476    1168       0 r-x-- libc.so.6
+00007f7f8d22c000     316     188       0 r---- libc.so.6
+00007f7f8d27b000      16      16      16 r---- libc.so.6
+00007f7f8d27f000       8       8       8 rw--- libc.so.6
+00007f7f8d281000      32      20      20 rw---   [ anon ]
+00007f7f8d2bf000       8       4       4 rw---   [ anon ]
+00007f7f8d2c1000       4       4       0 r---- ld-linux-x86-64.so.2
+00007f7f8d2c2000     164     164       0 r-x-- ld-linux-x86-64.so.2
+00007f7f8d2eb000      44      44       0 r---- ld-linux-x86-64.so.2
+00007f7f8d2f6000       8       8       8 r---- ld-linux-x86-64.so.2
+00007f7f8d2f8000       4       4       4 rw--- ld-linux-x86-64.so.2
+00007f7f8d2f9000       4       4       4 rw---   [ anon ]
+00007fff57a25000     136      16      16 rw---   [ stack ]
+00007fff57aa4000      16       0       0 r----   [ anon ]
+00007fff57aa8000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+total kB           18948    1844     116

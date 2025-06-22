@@ -1,0 +1,28 @@
+9963:   ./client localhost
+Address           Kbytes     RSS   Dirty Mode  Mapping
+000055d081a6a000       4       4       0 r---- client
+000055d081a6b000       4       4       0 r-x-- client
+000055d081a6c000       4       4       0 r---- client
+000055d081a6d000       4       4       4 r---- client
+000055d081a6e000       4       4       4 rw--- client
+000055d0a436b000     132       4       4 rw---   [ anon ]
+00007f225bd5f000      12       8       8 rw---   [ anon ]
+00007f225bd62000     144     144       0 r---- libc.so.6
+00007f225bd86000    1476    1184       0 r-x-- libc.so.6
+00007f225bef7000     316     124       0 r---- libc.so.6
+00007f225bf46000      16      16      16 r---- libc.so.6
+00007f225bf4a000       8       8       8 rw--- libc.so.6
+00007f225bf4c000      32      20      20 rw---   [ anon ]
+00007f225bf8a000       8       4       4 rw---   [ anon ]
+00007f225bf8c000       4       4       0 r---- ld-linux-x86-64.so.2
+00007f225bf8d000     164     164       0 r-x-- ld-linux-x86-64.so.2
+00007f225bfb6000      44      44       0 r---- ld-linux-x86-64.so.2
+00007f225bfc1000       8       8       8 r---- ld-linux-x86-64.so.2
+00007f225bfc3000       4       4       4 rw--- ld-linux-x86-64.so.2
+00007f225bfc4000       4       4       4 rw---   [ anon ]
+00007fff45276000     136      12      12 rw---   [ stack ]
+00007fff452af000      16       0       0 r----   [ anon ]
+00007fff452b3000       8       4       0 r-x--   [ anon ]
+ffffffffff600000       4       0       0 --x--   [ anon ]
+---------------- ------- ------- ------- 
+total kB            2556    1776      96
